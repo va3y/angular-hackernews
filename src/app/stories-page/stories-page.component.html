@@ -1,11 +1,12 @@
 <main class="p-8">
-  <a target="_blank" rel="noreferrer" href="{{ this.story.url }}">
-    <h1 class="text-red-500 text-3xl font-bold mb-8">
+  <a class="mb-8" target="_blank" rel="noreferrer" href="{{ this.story.url }}">
+    <h1 class="text-red-500 text-2xl font-bold inline-block mr-2">
       {{ this.story.title }}
     </h1>
+    <span class="text-sm text-gray-500">({{ this.story.url }}) </span>
   </a>
 
-  comments: {{ this.story.comments_count }}
+  <div class="text-xl mt-8">Comments: {{ this.story.comments_count }}</div>
   <app-comment
     *ngFor="let comment of this.story.comments"
     [comment]="comment"
