@@ -14,7 +14,6 @@ export class GetStoriesService {
   }
 
   getStories(slug: string) {
-    console.log(slug);
     const slugToRequestEndingMap: Record<string, string> = {
       ['/' + RouterPaths.Home]: 'news',
       ['/' + RouterPaths.Jobs]: 'jobs',

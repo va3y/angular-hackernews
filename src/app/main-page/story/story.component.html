@@ -1,5 +1,8 @@
-<li class="flex bg-red-200 p-3 rounded-md space-x-4">
-  <a [routerLink]="['/story', this.story.id]">
+<li>
+  <a
+    class="p-4 flex bg-red-200 rounded-md space-x-4"
+    [routerLink]="['/story', this.story.id]"
+  >
     <div>
       {{ this.story.title }}
     </div>

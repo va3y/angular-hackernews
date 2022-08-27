@@ -13,7 +13,7 @@ export class GetStoryService {
     this.#apiClient = apiClient;
   }
 
-  getStory(storyId: number) {
+  getStory(storyId: string) {
     return this.#apiClient.get<Story>(`item/${storyId}`);
   }
 }

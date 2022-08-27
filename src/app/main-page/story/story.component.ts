@@ -7,8 +7,6 @@ import { Story } from '../types';
   styleUrls: ['./story.component.css'],
 })
 export class StoryComponent implements OnInit {
-  constructor() {}
-
   @Input() story!: Story;
 
   ngOnInit(): void {}

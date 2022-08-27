@@ -1,1 +1,13 @@
-<p>stories-page works!</p>
+<main class="p-8">
+  <a target="_blank" rel="noreferrer" href="{{ this.story.url }}">
+    <h1 class="text-red-500 text-3xl font-bold mb-8">
+      {{ this.story.title }}
+    </h1>
+  </a>
+
+  comments: {{ this.story.comments_count }}
+  <app-comment
+    *ngFor="let comment of this.story.comments"
+    [comment]="comment"
+  ></app-comment>
+</main>

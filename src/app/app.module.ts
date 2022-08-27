@@ -8,7 +8,7 @@ import { StoriesPageComponent } from './stories-page/stories-page.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MainPageComponent } from './main-page/main-page.component';
 import { StoryComponent } from './main-page/story/story.component';
-import { GetStoryComponent } from './stories-page/get-story/get-story.component';
+import { CommentComponent } from './stories-page/comment/comment.component';
 
 @NgModule({
   declarations: [
@@ -17,10 +17,9 @@ import { GetStoryComponent } from './stories-page/get-story/get-story.component'
     NavComponent,
     StoriesPageComponent,
     StoryComponent,
-    GetStoryComponent,
+    CommentComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
-  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
