@@ -1,0 +1,8 @@
+<li class="flex bg-red-200 p-3 rounded-md space-x-4">
+  <a [routerLink]="['/story', this.story.id]">
+    <div>
+      {{ this.story.title }}
+    </div>
+    <div>comments: {{ this.story.comments_count }}</div>
+  </a>
+</li>

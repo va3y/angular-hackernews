@@ -1,0 +1,8 @@
+<div class="mt-8">
+  <ul class="flex flex-col space-y-4 px-8">
+    <app-main-page-story
+      *ngFor="let story of this.stories"
+      [story]="story"
+    ></app-main-page-story>
+  </ul>
+</div>
